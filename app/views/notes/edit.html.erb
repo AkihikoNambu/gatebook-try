@@ -1,0 +1,5 @@
+<%= form_tag update_note_path(@note.id), method: 'patch' do %>
+  <%= text_field_tag :title, @note.title %>
+  <%= text_area_tag :content, @note.content %>
+  <%= submit_tag '編集する' %>
+<% end %>
