@@ -42,54 +42,6 @@ a:hover {
   padding-right: 15px;
 }
 
-/* ボタン
-================================ */
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 3px;
-  border: 1px solid transparent;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-/* 「投稿する」「保存」ボタン */
-.primary-btn {
-  width: 250px;
-  background-color: #239b76;
-  float: right;
-}
-
-.primary-btn:hover {
-  background-color: #28b086;
-}
-
-/*　「編集」ボタン　*/
-.edit-btn {
-  background-color: #239b76;
-}
-
-.edit-btn:hover {
-  background-color: #28b086;
-  color: white;
-  text-decoration: none;
-}
-
-/*　「削除」ボタン　*/
-.destroy-btn {
-  background-color: #1f89e2;
-}
-
-.destroy-btn:hover {
-  background-color: #3695e5;
-  color: white;
-  text-decoration: none;
-}
-
-
-
 /* フォント
 ================================ */
 h1, h2, h3, h4, h5, h6 {
@@ -134,6 +86,11 @@ p {
   padding-top: 12px;
   letter-spacing: -1px;
   font-weight: bold;
+}
+
+#logo a{
+  color: #fff;
+  text-decoration: none;
 }
 
 #logo:hover {
@@ -188,128 +145,3 @@ footer small {
   float: left;
 }
 
-/* サインアップ - Gatebookへようこそ
-================================ */
-.greeting {
-  padding-top: 40px;
-  margin-bottom: 30px;
-  width: 40%;
-  float: left;
-}
-
-.greeting h1 {
-  font-size: 4em;
-  line-height: 1.2;
-}
-
-.greeting img {
-  width: 40%;
-}
-
-.account-info-form {
-  width: 40%;
-  border: 0;
-  margin-top: 160px;
-  margin-bottom: 30px;
-  float: right;
-}
-
-/* プロフィール編集ページ
-================================ */
-.edit {
-  width: 480px;
-  margin: 0 auto;
-}
-
-.edit .account-info-form {
-  width: 100%;
-  float: none;
-  margin-top: 80px;
-}
-
-/* フォーム
-================================ */
-input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
-  width: 100%;
-  margin-bottom: 15px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  -moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
-  box-shadow: inner 0 0 2px rgba(0, 0, 0, 0.1);
-}
-
-input {
-  height: auto !important;
-}
-
-.form-control {
-  display: block;
-  width: 100%;
-  /*height: 34px;*/
-  padding: 6px 12px;
-  font-size: 18px;
-  line-height: 1.428571429;
-  color: #555555;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #ccc;
-}
-
-.title-field {
-  width: 480px;
-}
-
-.content-field {
-  height: 90px;
-  width: 980px;
-}
-
-/* 投稿一覧
-================================ */
-.notes {
-  margin: 0;
-}
-
-.notes li {
-  overflow: auto;
-  padding: 10px 0;
-  border-bottom: 1px solid #eaeaea;
-}
-
-/* 投稿
-================================ */
-.notes li {
-  padding: 10px 0;
-  border-top: 1px solid #e8e8e8;
-}
-
-.notes .content {
-  display: block;
-}
-
-.notes .content img {
-  display: block;
-  padding: 5px 0;
-}
-
-aside textarea {
-  height: 120px;
-  margin-bottom: 5px;
-  font-size: 14px;
-  padding-left: 5px;
-}
-
-.notes-list {
-  width: 58%;
-  float: right;
-}
-
-.notes-list h3 {
-  margin-left: 37px;
-}

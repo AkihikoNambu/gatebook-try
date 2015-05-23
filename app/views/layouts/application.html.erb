@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Gatebook</title>
+    <title>Gatebook | 記事投稿SNSサービス</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
@@ -10,11 +10,15 @@
     <!-- ヘッダー -->
     <header class="navbar">
       <div class="container">
-        <%= link_to "Gatebook", root_path, id: "logo" %>
+        <div id="logo"><%= link_to "Gatebook", root_path %></div>
+        <!-- オリジナル -->
+        <!-- <div id="logo">Gatebook</div> -->
         <nav>
           <ul class="header-right">
             <li><%= link_to "Top", root_path %></li>
+            <!-- <li>Top</li> -->
             <li><%= link_to "About", about_path %></li>
+            <!-- <li>About</li> -->
           </ul>
         </nav>
       </div>
@@ -22,7 +26,7 @@
     <div class="container">
       <%= yield %>
     </div>
-      <!-- フッター -->
+    <!-- フッター -->
     <div class="container">
       <footer class="footer">
         <small>
@@ -32,3 +36,5 @@
     </div>
   </body>
 </html>
+
+

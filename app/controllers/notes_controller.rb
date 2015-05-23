@@ -27,7 +27,7 @@ class NotesController < ApplicationController
     @note.title = params[:title]
     @note.content = params[:content]
     @note.save
-    redirect_to show_note_path(@note)
+    redirect_to show_note_path(@note.id)
   end
 
   def destroy
